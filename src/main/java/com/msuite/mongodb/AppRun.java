@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stacks.mongodb;
+package com.msuite.mongodb;
 
-import com.stacks.mongodb.application.MongoTest;
+import com.msuite.mongodb.application.MongoTest;
+import com.msuite.mongodb.application.builder.MDBClient;
 import java.util.Scanner;
 
 /**
@@ -14,10 +15,8 @@ import java.util.Scanner;
  */
 public class AppRun {
     
-    private static final String fNEW_LINE = System.getProperty("line.separator");
     private static final String FIELD_TO_SEARCH = "Please insert field top search:";
     private static final String EXIT = "exit";
-    private static final String SEARCHING = "searching...";
     private static final String RESULTS = "rows: ";
 
     /**
@@ -35,14 +34,13 @@ public class AppRun {
                 System.out.println(RESULTS + String.valueOf(i));
                 System.out.println(FIELD_TO_SEARCH);
                 field = scanInput.nextLine();
-                if (field.equals("more")) {
-                    mongo.dinamicDataTest();
-                }
                 if (field.equals("form")) {
                     mongo.testInsertDefinition(scanInput);
                 }
             }
             
+        }finally{
+            MDBClient.DEFAULT.getMongoClient().close();
         }
     }
     

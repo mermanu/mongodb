@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stacks.mongodb.application.builder;
+package com.msuite.mongodb.application.definition;
 
-import com.stacks.mongodb.application.json.parser.JSONFileReader;
 import java.util.Map;
 import java.util.Scanner;
 import org.bson.Document;
@@ -31,8 +30,8 @@ public class CollectionDefinition {
     }  
     
     private void initDefinition(){
-        JSONFileReader fReader=new JSONFileReader();
-        String json=fReader.getJsonFromFile(jsonDefinition);     
+        JSONDefinition jsonDef=new JSONDefinition();
+        String json=jsonDef.getJsonFromFile(jsonDefinition);     
         this.document=Document.parse(json);
     }
 

@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stacks.mongodb.application;
+package com.msuite.mongodb.application.builder;
 
-import com.stacks.mongodb.application.builder.DataField;
-import com.stacks.mongodb.application.builder.DateField;
-import com.stacks.mongodb.application.builder.Field;
-import com.stacks.mongodb.application.builder.NumberField;
-import com.stacks.mongodb.application.builder.StringField;
+import com.msuite.mongodb.application.components.types.DataField;
+import com.msuite.mongodb.application.components.types.DateField;
+import com.msuite.mongodb.application.components.Field;
+import com.msuite.mongodb.application.components.types.NumberField;
+import com.msuite.mongodb.application.components.types.StringField;
 
 /**
  *

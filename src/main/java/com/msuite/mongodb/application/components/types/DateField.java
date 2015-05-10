@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stacks.mongodb.application.builder;
+package com.msuite.mongodb.application.components.types;
+
+import com.msuite.mongodb.application.components.Field;
 
 /**
  *
  * @author manuelmerida
  */
-public class StringField extends Field{
-
-        
+public class DateField extends Field{
+    
 }
