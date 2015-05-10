@@ -1,0 +1,17 @@
+{
+    "id": "NUMBER",
+    "idCenter": "NUMBER",
+    "idProfile": "NUMBER",
+    "idUser": "NUMBER",
+    "idConfig": "NUMBER",
+    "packey": "STRING",
+    "data": {
+        "dat1": "STRING",
+        "dat2": "STRING"
+    },
+    "custom": {
+        "cus1": "STRING",
+        "cus2": "STRING",
+        "cus3": "STRING"
+    }
+}
